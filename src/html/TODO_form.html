@@ -39,6 +39,64 @@
         }
     </style>
 
+    <!-- Botó despeglable -->
+    <style>
+        .dropbtn {
+        background-color: #3498DB;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        }
+    </style>
+
+    <style>
+        /* Dropdown button on hover & focus */
+        .dropbtn:hover, .dropbtn:focus {
+        background-color: #2980B9;
+    }
+    </style>
+
+    <style>
+        /* The container <div> - needed to position the dropdown content */
+        .dropdown {
+        position: relative;
+        display: inline-block;
+        }
+    </style>
+
+    <style>
+        /* Dropdown Content (Hidden by Default) */
+        .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        }
+    </style>
+
+    <style>
+        /* Links inside the dropdown */
+        .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        }
+    </style>
+
+    <style>
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {background-color: #ddd}
+    </style>
+
+    <style>
+        /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+        .show {display:block;}
+    </style>
 
 </head>
 <body  style="background-color:LightGrey;">
@@ -67,29 +125,34 @@
 
         <form name="message" method="post" class="form">
             <section>
-        
-          <div style="float:left;margin-right:20px;">
-            <label for="title" style="color:purple;">Title</label>
-            <input id="title" type="text" value="" name="title" style="background-color:Lavender">
-          </div>
-        
-          <div style="float:left;">
-            <label for="deadline">Deadline</label>
-            <input id="deadline" type="text" value="" name="deadline" style="background-color:Lavender">
-          </div>
-        
-          <br style="clear:both;" />
-        
+                <div style="float:left; margin-right:50px;">
+                    <label for="title" style="color:purple;">Title</label>
+                    <input id="title" type="text" value="" name="title" style="background-color:Lavender; width: 300px">
+                </div>
+                
+                <div style="float:left;">
+                    <label for="deadline">Deadline</label>
+                    <input id="deadline" type="text" value="" name="deadline" style="background-color:Lavender; width: 250px">
+                </div>
+                
+                <br style="clear:both;" />
             </section>
         
-            <section>
-        
-            <label for="category">Category</label>
-            <input id="category" type="text" value="" name="category" style="background-color:Lavender">
-            <label for="description">Description</label>
-            <input id="description" type="text" value="" name="description" style="background-color:Lavender">
-        
+            <section class="dropdown" style = "margin-top:30px;">
+                <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#">Development</a>
+                    <a href="#">Miscellaneous</a>
+                    <a href="#">Personal projects</a>
+                    <a href="#">Uni projects</a>
+                </div>
             </section>
+
+            <section style = "margin-top:30px;">
+                <label for="description">Description</label>
+                <input id="description" type="text" value="" name="description" style="width: 610px; background-color:Lavender; height: 300px" >
+            </section>
+            
         </form>
     
     </main>
