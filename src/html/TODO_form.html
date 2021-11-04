@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--<link rel="stylesheet" href="./css/index.css">-->
+    <link rel="stylesheet" href="C:\Users\marin\OneDrive - La Salle\marina\salle\3r\projectes web 1\p1-web\p1-web\src\css\index.css">
     <title>TODO form</title>
 
     <!-- imatges -->
     <style>
         .box {
-            background-color: lightgrey;
+            background-color: Lavender;
             width: 320px;
             padding: 10px;
             margin: 10px;
             display: inline-block;
             position: relative;
-            left: 120px;
+            left: 220px;
             top: 45px;
         }
     </style>
@@ -25,13 +25,23 @@
         .inline-block {
             display: inline-block;
             position: relative;
-            left: 100px;
+            left: 200px;
             top: 70px;
         }
     </style>
 
+    <!-- formulari -->
+    <style>
+        .form {
+            position: relative;
+            left: 220px;
+            top: 100px;
+        }
+    </style>
+
+
 </head>
-<body>
+<body  style="background-color:LightGrey;">
     <main>
         <!-- imatges -->
         <div>
@@ -54,6 +64,34 @@
                     alt="SALLE logo" width="50" height="50">
             </div>
         </div>
+
+        <form name="message" method="post" class="form">
+            <section>
+        
+          <div style="float:left;margin-right:20px;">
+            <label for="title" style="color:purple;">Title</label>
+            <input id="title" type="text" value="" name="title" style="background-color:Lavender">
+          </div>
+        
+          <div style="float:left;">
+            <label for="deadline">Deadline</label>
+            <input id="deadline" type="text" value="" name="deadline" style="background-color:Lavender">
+          </div>
+        
+          <br style="clear:both;" />
+        
+            </section>
+        
+            <section>
+        
+            <label for="category">Category</label>
+            <input id="category" type="text" value="" name="category" style="background-color:Lavender">
+            <label for="description">Description</label>
+            <input id="description" type="text" value="" name="description" style="background-color:Lavender">
+        
+            </section>
+        </form>
+    
     </main>
 
 
