@@ -44,49 +44,53 @@
     <!-- Botó despeglable -->
     <style>
         .dropbtn {
-        background-color: #3498DB;
-        color: white;
-        padding: 16px;
-        font-size: 16px;
-        border: none;
-        cursor: pointer;
+            cursor: pointer;
+            background-color: rgb(223,221,231);
+            color: black;
+            padding: 10px;
+            padding-left: 15px;
+            border-radius: 5px;
+            font: 18px Roboto;
+            font-weight: bold;
+            border: none;
         }
     </style>
 
     <style>
         /* Dropdown button on hover & focus */
         .dropbtn:hover, .dropbtn:focus {
-        background-color: #2980B9;
-    }
+            background-color: rgb(170, 161, 200);
+        }
     </style>
 
     <style>
         /* The container <div> - needed to position the dropdown content */
         .dropdown {
-        position: relative;
-        display: inline-block;
+            position: relative;
+            display: inline-block;
         }
     </style>
 
     <style>
         /* Dropdown Content (Hidden by Default) */
         .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #f1f1f1;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
         }
     </style>
 
     <style>
         /* Links inside the dropdown */
         .dropdown-content a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
+            color: black;
+            font: 16px Roboto;
+            padding: 15px 15px;
+            text-decoration: none;
+            display: block;
         }
     </style>
 
@@ -140,8 +144,9 @@
                 <br style="clear:both;" />
             </section>
         
-            <section class="dropdown" style = "margin-top:30px;">
-                <button onclick="myFunction()" class="dropbtn">Clica aquí</button>
+            <section class="dropdown" style = "margin-top:25px;">
+                <label for="category" style= "font: 18px Roboto; font-weight: bold; margin-bottom:10px">Category</label>
+                <button onclick="myFunction()" class="dropbtn">Select category<img src="https://img.icons8.com/ios-glyphs/30/000000/expand-arrow--v1.png" alt="&#5167" width="10" height="10" style="padding-left: 10px"/></button>
                 <div id="myDropdown" class="dropdown-content">
                     <a href="#">Development</a>
                     <a href="#">Miscellaneous</a>
@@ -151,8 +156,8 @@
             </section>
 
             <section style = "margin-top:30px;">
-                <label for="description">Description</label>
-                <textarea id="description" type="text" value="" name="description" style="width: 610px; background-color:rgb(223,221,231); height: 300px" ></textarea>
+                <label for="description" style= "font: 18px Roboto; font-weight: bold; margin-bottom:10px">Description</label>
+                <textarea id="description" type="text" value="" name="description" style="width: 620px; background-color:rgb(223,221,231); height: 100px; padding: 20px; border-radius: 5px; border: none" ></textarea>
             </section>
             
         </form>
