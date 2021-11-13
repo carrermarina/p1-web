@@ -35,6 +35,7 @@ export class TascaForm {
         });
     }
 
+    //funcio que elimina les coses escrites al form
     #cleartascaForm() {
         this.#tascaNameInputNodes["input1"].value = "";
         this.#tascaNameInputNodes["input2"].value = "";
