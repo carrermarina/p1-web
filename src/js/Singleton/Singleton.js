@@ -7,6 +7,8 @@ export class Singleton {
 
     //Afegir una nova tasca del formulari de TODO_form
     afegirTasca() {
+        //log de prova
+        console.log("1");
         form = document.getElementById("formulari");
 
         if (title === "" || deadline === ""  || description === "") {
@@ -15,7 +17,8 @@ export class Singleton {
         } else {
             //TODO fer categories
             tasca = Tasca(form.getElementById("title"), form.getElementById("deadline"), form.getElementById("description"), form.getElementById("completed"), categories);
-
+            //log de prova
+            console.log(tasca.title);
             //afegeix la nova tasca a l'array
             llistaTasques.push(tasca);
         }
@@ -30,6 +33,7 @@ export class Singleton {
         form.getElementById["deadline"].value = "";
     }
 
+    
 
     addObserver(observer) {
         this.#observers.push(observer);
