@@ -9,18 +9,35 @@ export class Singleton {
     afegirTasca() {
         //log de prova
         console.log("1");
-        form = document.getElementById("formulari");
 
+        //agafem el formulari en la variable form
+        form = document.getElementById("formulari");
+        title = form.getElementById("title")
+        deadline = form.getElementById("deadline");
+        description = form.getElementById("description");
+        completed = form.getElementById("completed");
+
+        //si estan buides
         if (title === "" || deadline === ""  || description === "") {
             console.log("Falta informació sobre la tasca!");
             return;
         } else {
-            //TODO fer categories
-            tasca = Tasca(form.getElementById("title"), form.getElementById("deadline"), form.getElementById("description"), form.getElementById("completed"), categories);
-            //log de prova
-            console.log(tasca.title);
-            //afegeix la nova tasca a l'array
-            llistaTasques.push(tasca);
+            //si title te mes de 100 caracters
+            if(title.length > 100) {
+                console.log("El títol ha de tenir menys de 100 caracters");
+            } else {
+                if(description.length > 1000) {
+                    console.log("La descripció ha de tenir menys de 1000 caracters");
+                } else {
+                    //TODO fer categories
+                    tasca = Tasca(title, deadline, description, completed, categories);
+                    //log de prova
+                    console.log(tasca.title);
+                    //afegeix la nova tasca a l'array
+                    llistaTasques.push(tasca);
+                }
+            }
+
         }
     }
 
@@ -33,7 +50,7 @@ export class Singleton {
         form.getElementById["deadline"].value = "";
     }
 
-    
+
 
     addObserver(observer) {
         this.#observers.push(observer);
