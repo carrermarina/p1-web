@@ -36,7 +36,11 @@ export class TascaForm {
     }
 
     #cleartascaForm() {
-        this.#tascaNameInputNodes["input"].value = "";
+        this.#tascaNameInputNodes["input1"].value = "";
+        this.#tascaNameInputNodes["input2"].value = "";
+        this.#tascaNameInputNodes["input3"].value = "";
+        this.#tascaNameInputNodes["input4"].value = "";
+
     }
 
     //part visual del formulari (crec que sha de fer aqui i no al todo form)
