@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="..\css\index.css">
     <script src = "..\js\dropdownbutton.js"></script>
+    <script src = "..\components\TascaForm.js"></script>
     <title>TODO form</title>
 
     <!-- imatges -->
@@ -129,7 +130,7 @@
             </div>
         </div>
 
-        <form name="message" method="post" class="form">
+        <form name="formulari" method="post" class="form">
             <section>
                 <div style="float:left; margin-right:30px;">
                     <label for="title" style="color:rgb(99,72,171); font: 18px Roboto; font-weight: bold; margin-bottom:10px">Title</label>
@@ -158,6 +159,14 @@
             <section style = "margin-top:30px;">
                 <label for="description" style= "font: 18px Roboto; font-weight: bold; margin-bottom:10px">Description</label>
                 <textarea id="description" type="text" value="" name="description" style="width: 620px; background-color:rgb(223,221,231); height: 100px; padding: 20px; border-radius: 5px; border: none" ></textarea>
+            </section>
+
+            <!--TODO fer button cancel i accept-->>
+            <section>
+                <div style="float:left;">
+                    <button onclick="cancelarTasca()">Cancel</button>
+                    <button onclick="afegirTasca()">Accept</button>
+                </div>
             </section>
             
         </form>
