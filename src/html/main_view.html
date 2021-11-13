@@ -4,9 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Main view</title>
 </head>
 <body>
-    
+    <link rel="stylesheet" href="../css/estil.css">
+    <div id ="contenidorGeneral">
+        <div id= "contenidor1">
+            <div class="imatgeTodo">
+                <img class = "imatge" src="logo.png" width="70" height="70">
+                <div class = "text">
+                    <h1>TODO++</h1>
+                    <p id = "duties">4 duties</p>
+                    <p id = "urgentpetit">1 urgent</p>
+                </div>
+            </div>
+            <button id= "buttonTODO"type="submit">Add TODO</button>
+           
+            <div id = "menu">
+            <ul>
+                <li><a id="nav_menu" href="#"><img id = "Nav1" src="https://cdn.pixabay.com/photo/2019/02/26/09/19/calender-4021509_960_720.png" alt="x" width="19" height="19"/>Today</a></li>
+                <li><a id="nav_menu" href="#"><img id = "Nav2" src="https://icon-library.com/images/checklist-icon-png/checklist-icon-png-6.jpg" alt="x" width="20" height="20"/>All duties</a></li>
+                <li><a id="nav_menu" href="#"><img id = "Nav3" src="https://static.thenounproject.com/png/2351449-200.png" alt="x" width="25" height="25"/>Categories</a></li> 
+            </ul>
+            </div> 
+            
+        <input type="text" id = "textCaixa"></input>
+        <button id= "tick2"type="submit"><img src="https://seguroac.com/wp-content/uploads/2020/10/vector-chulo.png" alt="x" width="10" height="10"/></button>
+        <div id="opcions">
+            <ul id= "LlistaOpcions">
+                <li><button id = "BotoLlista" type="submit"><img src="https://cdn-icons-png.flaticon.com/512/75/75519.png" alt="x" width="10" height="10"/></button>Development</li>                    <li><button id = "BotoLlista" type="submit"><img src="https://cdn-icons-png.flaticon.com/512/75/75519.png" alt="x" width="10" height="10"/></button>Miscellaneous</li>
+                <li><button id = "BotoLlista" type="submit"><img src="https://cdn-icons-png.flaticon.com/512/75/75519.png" alt="x" width="10" height="10"/></button>Personal projects</li>
+                <li><button id = "BotoLlista" type="submit"><img src="https://cdn-icons-png.flaticon.com/512/75/75519.png" alt="x" width="10" height="10"/></button>Uni projects</li>
+            </ul>
+        </div>
+        </div>
+        <div id=contenidor2>
+            <img id = "tickcross" src = "tick.png" height="20" width="30" ><aside id = "duties2">All duties </aside>
+            <button id= "selectAll"type="submit">Select all</button>
+            <input id = "buscador" type="text">
+            <button id= "tickQuadrat"type="submit"><img src="https://seguroac.com/wp-content/uploads/2020/10/vector-chulo.png" alt="x" width="15" height="15"/></button>
+            <button id= "papelera"type="submit"><img src="https://cdn-icons-png.flaticon.com/512/58/58326.png" alt="x" width="20" height="20"/></button>
+            <div id ="buttons">
+                <button id= "quadrat"type="submit"><div id="cuadrado"></div></button>
+                <button id= "quadrat2"type="submit"><img id = imgQuadrats src = "https://pbs.twimg.com/profile_images/908013780856135680/1qCImmj2_400x400.jpg" alt="x" width="40" height="40"><p id = "TitolGran">Web Projects l</p><p id = "descripcio">Create a TODO list site web</p><p id = "data">20/11/2021</p><p id = "etiquetes" >Uni projects</p><p id = "etiquetes" >Development</p></button>
+                <button id= "quadrat3"type="submit"><div id="cuadrado"></div></button>
+                <button id= "quadrat4"type="submit"><img id = imgQuadrats src = "https://pbs.twimg.com/profile_images/908013780856135680/1qCImmj2_400x400.jpg" alt="x" width="40" height="40"><p id = "TitolGran">Web Projects l</p><p id = "descripcio">Create a TODO list site web</p><p id = "data">20/11/2021</p><p id = "etiquetes" >Uni projects</p><p id = "etiquetes" >Development</p></button>
+                <button id= "quadrat5"type="submit"><div id="cuadrado"></div></button>
+                <button id= "quadrat6"type="submit"><img id = imgQuadrats src = "https://pbs.twimg.com/profile_images/908013780856135680/1qCImmj2_400x400.jpg" alt="x" width="40" height="40"><p id = "TitolGran">Web Projects l</p><p id = "descripcio">Create a TODO list site web</p><p id = "data">20/11/2021</p><p id = "etiquetes" >Uni projects</p><p id = "etiquetes" >Development</p><p id = "urgent">Urgent!</p></button>
+                <button id= "quadrat7"type="submit"><div id="cuadrado"></div></button>
+                <button id= "quadrat8"type="submit"><img id = imgQuadrats src = "https://pbs.twimg.com/profile_images/908013780856135680/1qCImmj2_400x400.jpg" alt="x" width="40" height="40"><p id = "TitolGran">Web Projects l</p><p id = "descripcio">Create a TODO list site web</p><p id = "data">20/11/2021</p><p id = "etiquetes" >Uni projects</p><p id = "etiquetes" >Development</p></button>
+            </div>
+        </div> 
+</div>
+</div>
 </body>
 </html>
