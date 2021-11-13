@@ -1,7 +1,9 @@
+import { Tasca } from "../model/Tasca";
+
 export class Singleton {
     #observers = [];
-    // suposo que tambe te categories i tasques nidea
-
+    //singleton te un array de tasques
+    #tasques = [Tasca];
 
 
 
