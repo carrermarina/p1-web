@@ -11,7 +11,7 @@ export class Singleton {
         console.log("1");
 
         //agafem el formulari en la variable form
-        form = document.getElementById("formulari");
+        form = document.getElementById("formulari2");
         title = form.getElementById("title")
         deadline = form.getElementById("deadline");
         description = form.getElementById("description");
@@ -32,7 +32,7 @@ export class Singleton {
                 if(description.length > 1000) {
                     console.log("La descripció ha de tenir menys de 1000 caracters");
                 } else {
-                    //TODO fer categories
+                    //TODO fer categoria
                     tasca = Tasca(title, deadline, description, completed, categories);
                     //log de prova
                     console.log(tasca.title);
@@ -46,7 +46,7 @@ export class Singleton {
 
     //Cancelar la nova tasca del formulari de TODO_form i borrar el que havies escrit
     cancelarTasca() {
-        form = document.getElementById("formulari");
+        form = document.getElementById("formulari2");
 
         form.getElementById["title"].value = "";
         form.getElementById["description"].value = "";
