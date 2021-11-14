@@ -9,9 +9,7 @@ export class Singleton {
     afegirTasca() {
         //log de prova
         console.log("1");
-        //PROVA
-        <p>HOLAA</p>
-/*
+
         //agafem el formulari en la variable form
         form = document.getElementById("formulari2");
         title = form.getElementById("title")
@@ -44,11 +42,13 @@ export class Singleton {
                }
             }
 
-        }*/
+        }
     }
 
     //Cancelar la nova tasca del formulari de TODO_form i borrar el que havies escrit
     cancelarTasca() {
+        //PROVA
+        <p>HOLAA</p>
         form = document.getElementById("formulari2");
 
         form.getElementById["title"].value = "";

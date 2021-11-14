@@ -1,10 +1,14 @@
+import { Singleton } from "./singleton/singleton";
+
 const formulario = document.getElementById("formulari");
-const input = document.getElementById("input")
-const llistaCategory = document.getElementById("opcions")
-const template = document.getElementById("template").content
-const fragment = document.createDocumentFragment()
-const addBtn = document.querySelector("tick2")
-const boto = document.getElementById("BotoLlista")
+const input = document.getElementById("input");
+const llistaCategory = document.getElementById("opcions");
+const template = document.getElementById("template").content;
+const fragment = document.createDocumentFragment();
+const addBtn = document.querySelector("tick2");
+const boto = document.getElementById("BotoLlista");
+const singleton = new Singleton();
+const botoAfegir = document.getElementById("afegir");
 
 //conté les categories
 var category = {}
@@ -13,7 +17,6 @@ var category = {}
 document.addEventListener("DOMContentLoaded", () =>{
    if(localStorage.getItem("category")){
         category = JSON.parse(localStorage.getItem("category"))
-        
     }
     pintarTareas()
 })
@@ -21,6 +24,46 @@ document.addEventListener("DOMContentLoaded", () =>{
 llistaCategory.addEventListener('click', e =>{
     btnAccion(e)
     console.log("le has dado click")
+})
+
+botoAfegir.addEventListener('click', e =>{
+    //PROVA
+    <p>adeu</p>;
+    btnAccion(e);
+        //agafem el formulari en la variable form
+        form = document.getElementById("formulari2");
+        title = form.getElementById("title")
+        deadline = form.getElementById("deadline");
+        description = form.getElementById("description");
+        completed = form.getElementById("completed");
+
+        //PROVA
+        form.getElementById["title"].value = "HOLA";
+
+        //si estan buides
+        if (title === "" || deadline === ""  || description === "") {
+            
+            console.log("Falta informació sobre la tasca!");
+            return;
+        } else {
+            //si title te mes de 100 caracters
+            if(title.length > 100) {
+                console.log("El títol ha de tenir menys de 100 caracters");
+            } else {
+                if(description.length > 1000) {
+                    console.log("La descripció ha de tenir menys de 1000 caracters");
+                } else {
+                    //TODO fer categoria
+                    tasca = Tasca(title, deadline, description, completed, categories);
+                    //log de prova
+                    console.log(tasca.title);
+                    //afegeix la nova tasca a l'array
+                    singleton.llistaTasques.push(tasca);
+                }
+            }
+
+        }
+    console.log("le has dado click");
 })
 
 formulario.addEventListener('submit', e =>{
@@ -81,4 +124,3 @@ const btnAccion = e => {
     }
     e.stopPropagation()
 }
-
