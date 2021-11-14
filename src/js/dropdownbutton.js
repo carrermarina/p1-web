@@ -13,3 +13,7 @@ window.onclick = function(e) {
     }
   }
 }
+
+$('.dropdown-item').click(function(){
+	$(this).parent().parent().parent().find('.dropbtn').html(($(this).text()))
+})
