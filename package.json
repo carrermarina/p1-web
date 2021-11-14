@@ -1,18 +1,28 @@
 {
-  "name": "webprojectsi",
+  "name": "serverpw",
   "version": "0.0.0",
-  "description": "",
+  "description": "P1 Projectes Web I.js",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "practica1"
+    "start": "node app.js",
+    "installnpm": "npm install",
+    "deletedist": "del /s /q dist",
+    "copy": "xcopy /r/h/s/i/y .\\src\\media\\ .\\dist\\media",
+    "check": "npx check-html-links dist",
+    "build": "npm run installnpm && npm run deletedist && npm run html-minifier && npm run copy && npm run check",
+    "html-minifier": "html-minifier --input-dir src --output-dir dist --file-ext html --remove-comments --collapse-whitespace --minify-js true --minify-css true"
   },
   "keywords": [
-    "practia1"
+    "node",
+    "primerizo",
+    "windows"
   ],
-  "author": "martarojo",
-  "license": "MIT"
+  "author": "Marina Ortega Picazo",
+  "license": "MIT",
+  "dependencies": {
+    "express": "4.17.1"
+  },
+  "devDependencies": {
+    "html-minifier": "4.0.0"
+  }
 }
