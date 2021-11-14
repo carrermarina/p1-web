@@ -9,6 +9,7 @@ const addBtn = document.querySelector("tick2");
 const boto = document.getElementById("BotoLlista");
 const singleton = new Singleton();
 const botoAfegir = document.getElementById("afegir");
+const botoCancel = document.getElementById("cancel");
 
 //conté les categories
 var category = {}
@@ -26,9 +27,17 @@ llistaCategory.addEventListener('click', e =>{
     console.log("le has dado click")
 })
 
+botoCancel.addEventListener('click', e =>{
+    btnAccion(e);
+    console.log("le has dado click");
+    form = document.getElementById("formulari2");
+
+    form.getElementById["title"].value = "";
+    form.getElementById["description"].value = "";
+    form.getElementById["deadline"].value = "";
+})
+
 botoAfegir.addEventListener('click', e =>{
-    //PROVA
-    <p>adeu</p>;
     btnAccion(e);
         //agafem el formulari en la variable form
         form = document.getElementById("formulari2");
