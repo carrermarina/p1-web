@@ -9,7 +9,9 @@ export class Singleton {
     afegirTasca() {
         //log de prova
         console.log("1");
-
+        //PROVA
+        <p>HOLAA</p>
+/*
         //agafem el formulari en la variable form
         form = document.getElementById("formulari2");
         title = form.getElementById("title")
@@ -22,6 +24,7 @@ export class Singleton {
 
         //si estan buides
         if (title === "" || deadline === ""  || description === "") {
+            
             console.log("Falta informació sobre la tasca!");
             return;
         } else {
@@ -38,10 +41,10 @@ export class Singleton {
                     console.log(tasca.title);
                     //afegeix la nova tasca a l'array
                     llistaTasques.push(tasca);
-                }
+               }
             }
 
-        }
+        }*/
     }
 
     //Cancelar la nova tasca del formulari de TODO_form i borrar el que havies escrit
