@@ -58,8 +58,8 @@ const pintarTareas = () =>{
     llistaCategory.innerHTML = ''
     Object.values(category).forEach(tarea => {
         const clone = template.cloneNode(true)
-        clone.querySelector('p').textContent = tarea.texto
-        clone.querySelectorAll('i')[0].dataset.id = tarea.id
+        clone.querySelector('label').textContent = tarea.texto
+        clone.querySelectorAll('button')[0].dataset.id = tarea.id
         //console.log(tarea.id)
         fragment.appendChild(clone)
     })
@@ -70,7 +70,7 @@ const pintarTareas = () =>{
 //quan se li dona al delete button
 
 const btnAccion = e => {
-    if((e.target.classList.contains(boto))){
+    if(e.target.classList.contains("BotoLlista")){
         delete category[e.target.dataset.id]
         pintarTareas()
         console.log(category)
@@ -78,7 +78,7 @@ const btnAccion = e => {
         delete category[e.target.dataset.id]
         pintarTareas()
         console.log()
-        //console.log(category)
     }
     e.stopPropagation()
 }
+
