@@ -17,6 +17,9 @@ export class Singleton {
         description = form.getElementById("description");
         completed = form.getElementById("completed");
 
+        //PROVA
+        form.getElementById["title"].value = "HOLA";
+
         //si estan buides
         if (title === "" || deadline === ""  || description === "") {
             console.log("Falta informació sobre la tasca!");
@@ -49,8 +52,6 @@ export class Singleton {
         form.getElementById["description"].value = "";
         form.getElementById["deadline"].value = "";
     }
-
-
 
     addObserver(observer) {
         this.#observers.push(observer);
